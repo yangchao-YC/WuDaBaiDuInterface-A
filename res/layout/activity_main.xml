@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"  
+ >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/sign"       
+        android:weightSum="8"
+        android:orientation="vertical" >
+    
+        <LinearLayout
+          android:layout_width="fill_parent"  
+          android:layout_height="0dp"     
+          android:layout_weight="5"
+          android:orientation="horizontal"
+             >       
+        </LinearLayout>
+  
+    <LinearLayout  
+        android:id="@+id/Main_info"  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"     
+        android:layout_weight="2"
+        android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" 
+        android:weightSum="4">  
+        
+        <TextView 
+            android:layout_width="fill_parent"  
+            android:layout_height="0dp"     
+            android:layout_weight="1"
+            />
+   
+		     <EditText  
+		        android:id="@+id/Main_edit_name"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="wrap_content"
+		        android:hint="@string/sign_name"	       
+		        android:textSize="12sp"	
+		        android:textColor="#FFFFFF"        
+		        android:textColorHint="#FFFFFF"
+		        android:layout_weight="1"
+		        android:paddingLeft="5dp"
+		        android:background="#1A6416"
+		        android:singleLine="true"   
+		        />  
+
+		      <EditText  
+		        android:id="@+id/Main_edit_pwd"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="wrap_content"  	        
+		        android:inputType="textPassword" 
+     	        android:hint="@string/sign_pwd"	        
+		        android:layout_marginTop="5dp"   
+		        android:paddingLeft="5dp" 
+		        android:textSize="12sp" 
+		        android:layout_weight="1"
+		        android:textColor="#FFFFFF"  		        
+		        android:textColorHint="#FFFFFF"
+		        android:background="#1A6416"  
+		        />  
+		        
+		      <TextView 
+		          android:id="@+id/Main_forget_psd"  
+		          android:layout_width="fill_parent"  
+		          android:layout_height="wrap_content" 
+		          android:layout_weight="1"		        
+		          android:gravity="center_vertical|right"
+		          android:textSize="12sp" 
+		          android:visibility="gone"
+		          android:textColor="@android:color/white"
+		          android:text="忘记密码"
+		          />
+		   
+    </LinearLayout>  
+        
+    <LinearLayout 
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/Main_button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:text="@string/sign_button"
+            android:textColor="#ffffffff"
+            android:textSize="12sp" />
+
+      </LinearLayout>         
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/home_copyright"
+        android:gravity="center"
+	    android:layout_marginBottom="6dp"
+        android:textColor="#FFFFFF"
+        android:textSize="4pt" />
+   
+</RelativeLayout>
