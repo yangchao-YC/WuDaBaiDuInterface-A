@@ -1,0 +1,63 @@
+<TabHost 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TabWidget 
+            android:id="@android:id/tabs"
+            android:background="#18283F"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout 
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+             <RelativeLayout 
+   				android:id="@+id/tab1"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+   				android:orientation="vertical"
+    			android:background="@drawable/bg"   >
+   				<ListView 
+       				android:id="@+id/List_view_list"
+       				android:layout_width="fill_parent"
+       				android:layout_height="fill_parent"
+       				android:background="#18283F"
+       				android:cacheColorHint="#00000000" 
+       				android:listSelector="@android:color/transparent"
+       				android:scrollbars="none"
+       				android:divider="@drawable/list_cell_line"
+       				android:descendantFocusability="blocksDescendants" >
+       			</ListView>
+			</RelativeLayout>
+			 <RelativeLayout 
+   				android:id="@+id/tab2"
+    			android:layout_width="match_parent"
+    			android:layout_height="match_parent"
+   				android:orientation="vertical"
+    			android:background="@drawable/bg"   >
+   				<ListView 
+       				android:id="@+id/List_view_list_old"
+       				android:layout_width="fill_parent"
+       				android:layout_height="fill_parent"
+       				android:background="#18283F"
+       				android:cacheColorHint="#00000000" 
+       				android:listSelector="@android:color/transparent"
+       				android:scrollbars="none"
+       				android:divider="@drawable/list_cell_line"
+       				android:descendantFocusability="blocksDescendants" >
+       			</ListView>
+			</RelativeLayout>
+        </FrameLayout>
+     </LinearLayout>
+</TabHost>
+    
+    
+    
+    
+   
